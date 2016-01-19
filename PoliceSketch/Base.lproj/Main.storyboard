@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9531" systemVersion="15C50" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="vXZ-lx-hvc">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9529"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController id="vXZ-lx-hvc" customClass="LPSViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="jyV-Pf-zRb"/>
+                        <viewControllerLayoutGuide type="bottom" id="2fi-mo-0CV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="eyes_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="yMs-B6-hQO" userLabel="eyes">
+                                <rect key="frame" x="50" y="120" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="220" id="2yO-Iq-w0E"/>
+                                    <constraint firstAttribute="height" constant="100" id="7wr-O6-Smy"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="mouth_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="PMd-p0-QxY" userLabel="mouth">
+                                <rect key="frame" x="50" y="320" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="wF1-1x-FgT"/>
+                                    <constraint firstAttribute="width" constant="220" id="yqZ-wb-A7O"/>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="nose_1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FMh-Rr-b1w" userLabel="nose">
+                                <rect key="frame" x="50" y="220" width="220" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="GCe-XZ-8ix"/>
+                                    <constraint firstAttribute="width" constant="220" id="qK7-2I-Zkf"/>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5xB-Ci-0us" userLabel="nextEyesButton">
+                                <rect key="frame" x="270" y="120" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_right.jpg"/>
+                                <connections>
+                                    <action selector="nextEyeButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="8hb-S5-lBX"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="42l-mn-TLg" userLabel="previousEyesButton">
+                                <rect key="frame" x="0.0" y="120" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="previousEyesButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="7LA-jc-oEo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dig-4v-1wQ" userLabel="nextNoseButton">
+                                <rect key="frame" x="270" y="220" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_right.jpg"/>
+                                <connections>
+                                    <action selector="nextNoseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="nbq-Ki-MUb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aDg-yI-zfg" userLabel="previousNoseButton">
+                                <rect key="frame" x="0.0" y="220" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="prevNoseButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KcZ-81-Z1l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NuL-S1-dvI" userLabel="previousMouthButton">
+                                <rect key="frame" x="0.0" y="320" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_left.jpg"/>
+                                <connections>
+                                    <action selector="prevMouthButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="NYn-2Q-SGw"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="191-RC-Heb" userLabel="nextMouthButton">
+                                <rect key="frame" x="270" y="320" width="50" height="100"/>
+                                <state key="normal" title="Button" image="arrow_right.jpg"/>
+                                <connections>
+                                    <action selector="nextMouthButton:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2v0-bT-I9j"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="dig-4v-1wQ" firstAttribute="top" secondItem="FMh-Rr-b1w" secondAttribute="top" id="0Fy-F1-2ud"/>
+                            <constraint firstItem="191-RC-Heb" firstAttribute="leading" secondItem="PMd-p0-QxY" secondAttribute="trailing" id="1Qz-U3-va4"/>
+                            <constraint firstItem="yMs-B6-hQO" firstAttribute="leading" secondItem="42l-mn-TLg" secondAttribute="trailing" id="6vF-ap-zgc"/>
+                            <constraint firstItem="dig-4v-1wQ" firstAttribute="leading" secondItem="FMh-Rr-b1w" secondAttribute="trailing" id="7sa-AY-jfF"/>
+                            <constraint firstItem="PMd-p0-QxY" firstAttribute="leading" secondItem="NuL-S1-dvI" secondAttribute="trailing" id="9EV-kc-QVi"/>
+                            <constraint firstItem="FMh-Rr-b1w" firstAttribute="top" secondItem="yMs-B6-hQO" secondAttribute="bottom" id="Av8-af-qCs"/>
+                            <constraint firstAttribute="trailing" secondItem="dig-4v-1wQ" secondAttribute="trailing" id="CMc-3R-DYb"/>
+                            <constraint firstItem="yMs-B6-hQO" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="Ccm-GU-7em"/>
+                            <constraint firstItem="aDg-yI-zfg" firstAttribute="top" secondItem="FMh-Rr-b1w" secondAttribute="top" id="DvU-og-NVH"/>
+                            <constraint firstItem="NuL-S1-dvI" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="Kh4-H1-8Q8"/>
+                            <constraint firstItem="aDg-yI-zfg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="LOC-m2-h0u"/>
+                            <constraint firstItem="42l-mn-TLg" firstAttribute="top" secondItem="yMs-B6-hQO" secondAttribute="top" id="PGB-XR-ADC"/>
+                            <constraint firstItem="PMd-p0-QxY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="PrR-hp-8nb"/>
+                            <constraint firstItem="5xB-Ci-0us" firstAttribute="height" secondItem="yMs-B6-hQO" secondAttribute="height" id="Qfr-pb-GTY"/>
+                            <constraint firstItem="42l-mn-TLg" firstAttribute="height" secondItem="yMs-B6-hQO" secondAttribute="height" id="TYU-QA-gDT"/>
+                            <constraint firstItem="5xB-Ci-0us" firstAttribute="leading" secondItem="yMs-B6-hQO" secondAttribute="trailing" id="Tu5-gh-D8b"/>
+                            <constraint firstItem="42l-mn-TLg" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" id="WWs-4t-wqg"/>
+                            <constraint firstItem="yMs-B6-hQO" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="100" id="XBh-F4-eEE"/>
+                            <constraint firstItem="5xB-Ci-0us" firstAttribute="top" secondItem="yMs-B6-hQO" secondAttribute="top" id="Y9r-0a-U7h"/>
+                            <constraint firstAttribute="trailing" secondItem="5xB-Ci-0us" secondAttribute="trailing" id="cRG-0g-8Gh"/>
+                            <constraint firstItem="dig-4v-1wQ" firstAttribute="height" secondItem="FMh-Rr-b1w" secondAttribute="height" id="iia-fD-Y4O"/>
+                            <constraint firstItem="191-RC-Heb" firstAttribute="height" secondItem="PMd-p0-QxY" secondAttribute="height" id="kQA-vq-hTZ"/>
+                            <constraint firstItem="FMh-Rr-b1w" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="ka3-DR-y1i"/>
+                            <constraint firstItem="FMh-Rr-b1w" firstAttribute="leading" secondItem="aDg-yI-zfg" secondAttribute="trailing" id="m8L-E1-M1y"/>
+                            <constraint firstItem="NuL-S1-dvI" firstAttribute="top" secondItem="PMd-p0-QxY" secondAttribute="top" id="mpU-6d-Xkh"/>
+                            <constraint firstItem="191-RC-Heb" firstAttribute="top" secondItem="PMd-p0-QxY" secondAttribute="top" id="rCx-PB-mSl"/>
+                            <constraint firstItem="PMd-p0-QxY" firstAttribute="centerX" secondItem="kh9-bI-dsS" secondAttribute="centerX" id="rJA-Qx-0fe"/>
+                            <constraint firstItem="PMd-p0-QxY" firstAttribute="top" secondItem="FMh-Rr-b1w" secondAttribute="bottom" id="rdy-Mj-bCm"/>
+                            <constraint firstAttribute="trailing" secondItem="191-RC-Heb" secondAttribute="trailing" id="vrd-qe-bWx"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="eyesImageView" destination="yMs-B6-hQO" id="UgU-KO-3pP"/>
+                        <outlet property="mouthImageView" destination="PMd-p0-QxY" id="W4b-jj-jmv"/>
+                        <outlet property="noseImageView" destination="FMh-Rr-b1w" id="a8N-I1-t6c"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="305" y="357"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="arrow_left.jpg" width="50" height="100"/>
+        <image name="arrow_right.jpg" width="50" height="100"/>
+        <image name="eyes_1.jpg" width="220" height="100"/>
+        <image name="mouth_1.jpg" width="220" height="100"/>
+        <image name="nose_1.jpg" width="220" height="100"/>
+    </resources>
+</document>
